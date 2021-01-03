@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>Using master sliders and child sliders</title>
+    	<link href="../../theme/jquery-ui.min.css" rel="stylesheet">
+        <link href="../../jquery-ui-cb.css" rel="stylesheet">
+    	<script src="../../jquery.min.js" type="text/javascript"></script>
+    	<script src="../../jquery-ui.min.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <style type="text/css">
+            .slider-container { 
+                width: 260px;
+                margin: 5px;
+            }
+            .slider-header {
+                float: left;
+            }
+            .slider-value {
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="slider-container">
+            <h2 class="slider-header">CPU Allocation:</h2>
+            <h2 class="slider-value ui-state-highlight"></h2>
+            <div class="ui-helper-clearfix"></div>
+            <div id="master"></div>
+        </div>
+        <div class="slider-container">
+            <h3 class="slider-header">CPU 1:</h3>
+            <h3 class="slider-value ui-state-highlight"></h3>
+            <div class="ui-helper-clearfix"></div>
+            <div id="cpu1"></div>
+        </div>
+        <div class="slider-container">
+            <h3 class="slider-header">CPU 2:</h3>
+            <h3 class="slider-value ui-state-highlight"></h3>
+            <div class="ui-helper-clearfix"></div>
+            <div id="cpu2"></div>
+        </div>
+        <div class="slider-container">
+            <h3 class="slider-header">CPU 3:</h3>
+            <h3 class="slider-value ui-state-highlight"></h3>
+            <div class="ui-helper-clearfix"></div>
+            <div id="cpu3"></div>
+        </div>
+        <div class="slider-container">
+            <h3 class="slider-header">CPU 4:</h3>
+            <h3 class="slider-value ui-state-highlight"></h3>
+            <div class="ui-helper-clearfix"></div>
+            <div id="cpu4"></div>
+        </div>
+    </body>
+
+</html>

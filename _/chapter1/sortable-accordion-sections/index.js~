@@ -1,0 +1,60 @@
+(function( $, undefined ) {
+
+$.widget( "ui.accordion", $.ui.accordion, {
+
+    options: $.extend(
+        {sortable: false}, 
+        $.ui.accordion.prototype.options
+    ),
+
+    _create: function () {
+
+        this._super( "_create" );
+
+        if ( !this.options.sortable ) {
+            return;
+        }
+
+        this.headers.each( function() {
+            $(this).next()
+                   .andSelf()
+                   .wrapAll( "<div></div>");
+        });
+
+        this.element.sortable({
+            axis: "y",
+            handle: "h3",
+            stop: function( event, ui ) {
+                ui.item
+                  .children( "h3" )
+                  .triggerHandler( "focusout" );
+            }
+        });        
+
+    },
+
+    _destroy: function () {
+
+        if ( !this.options.sortable) {
+            return;
+        }
+
+        this.element.sortable( "destroy" );
+
+        this.headers.each( function () {
+            $(this).unwrap("<div></div>");
+        });
+
+        this._super( "_destroy" );
+
+    }
+
+});
+
+})( jQuery );
+
+$(function() {
+
+    $( "#accordion" ).accordion({sortable: true});
+
+});

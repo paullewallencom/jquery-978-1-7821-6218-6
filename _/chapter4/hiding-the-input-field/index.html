@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>Hiding the input field</title>
+    	<link href="../../theme/jquery-ui.min.css" rel="stylesheet">
+        <link href="../../jquery-ui-cb.css" rel="stylesheet">
+    	<script src="../../jquery.min.js" type="text/javascript"></script>
+    	<script src="../../jquery-ui.min.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <style type="text/css">
+            div.date-section {
+                padding: 5px;
+                border-bottom: 1px solid;
+                width: 20%;
+            }
+
+            div.date-section:last-child {
+                border-bottom: none;
+            }
+
+            div.date-section label {
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-right: 2px;
+            }
+
+            div.date-section input {
+                border: none;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <div class="date-section">
+                <label>Day 1:</label>
+                <button>Day 1 date</button>
+                <input type="text" readonly />
+            </div>
+            <div class="date-section">
+                <label>Day 2:</label>
+                <button>Day 2 date</button>
+                <input type="text" readonly />
+            </div>
+            <div class="date-section">
+                <label>Day 3:</label>
+                <button>Day 3 date</button>
+                <input type="text" readonly />
+            </div>
+            <div class="date-section">
+                <label>Day 4:</label>
+                <button>Day 4 date</button>
+                <input type="text" readonly />
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,7 @@
+input.ui-autocomplete-input {
+    padding: 2px;
+}
+
+input.ui-autocomplete-input:focus {
+    outline: none;
+}

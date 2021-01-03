@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>Sorting tabs using the sortable interaction</title>
+    	<link href="../../theme/jquery-ui.min.css" rel="stylesheet">
+        <link href="../../jquery-ui-cb.css" rel="stylesheet">
+    	<script src="../../jquery.min.js" type="text/javascript"></script>
+    	<script src="../../jquery-ui.min.js" type="text/javascript"></script>
+        <script src="index_more.js" type="text/javascript"></script>
+        <style type="text/css">
+            #tabs {
+                width: 20%;
+            }
+            .ui-tabs .ui-tabs-nav li.ui-tab-move > a {
+                cursor: move;
+            }
+        </style>
+    </head>
+
+    <body>        
+        <div id="tabs">
+            <ul>
+                <li><a href="#tab1">Tab 1</a></li>
+                <li><a href="#tab2">Tab 2</a></li>
+                <li><a href="#tab3">Tab 3</a></li>
+            </ul>
+            <div id="tab1">
+                <p>Tab 1 content...</p>
+            </div>
+            <div id="tab2">
+                <p>Tab 2 content...</p>
+            </div>
+            <div id="tab3">
+                <p>Tab 3 content...</p>
+            </div>
+        </div>
+    </body>
+</html>

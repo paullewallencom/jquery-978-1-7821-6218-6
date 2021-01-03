@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>Animating progress changes</title>
+    	<link href="../../theme/jquery-ui.min.css" rel="stylesheet">
+        <link href="../../jquery-ui-cb.css" rel="stylesheet">
+    	<script src="../../jquery.min.js" type="text/javascript"></script>
+    	<script src="../../jquery-ui.min.js" type="text/javascript"></script>
+        <script src="index_more.js" type="text/javascript"></script>
+        <style type="text/css">
+            #progress { 
+                width: 180px; 
+            }
+            .ui-progressbar-animated > .ui-progressbar-value {
+                transition: width 0.7s ease-out;
+                -moz-transition: width .7s ease-out;
+                -webkit-transition: width 0.7s ease-out;
+                -o-transition: width 0.7s east-out;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="progress"></div>
+    </body>
+
+</html>

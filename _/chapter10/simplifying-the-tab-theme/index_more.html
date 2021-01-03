@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>Giving tabs an icon</title>
+    	<link href="../../theme/jquery-ui.min.css" rel="stylesheet">
+        <link href="../../jquery-ui-cb.css" rel="stylesheet">
+    	<script src="../../jquery.min.js" type="text/javascript"></script>
+    	<script src="../../jquery-ui.min.js" type="text/javascript"></script>
+        <script src="index_more.js" type="text/javascript"></script>
+        <style type="text/css">
+            div.ui-tabs-basic {
+                border: none;
+                background: none;
+            }
+            
+            div.ui-tabs-basic > ul.ui-tabs-nav {
+                background: none;
+                border-left: none;
+                border-top: none;
+                border-right: none;
+            }
+
+            #tabs-container {
+                width: 22%;
+                background: #f7f7f7;
+                padding: 0.9em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="tabs-container">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tab1">Tab 1</a></li>
+                    <li><a href="#tab2">Tab 2</a></li>
+                    <li><a href="#tab3">Tab 3</a></li>
+                </ul>
+                <div id="tab1">
+                    <h3>Tab 1...</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+                <div id="tab2">
+                    <h3>Tab 2...</h3>
+                    <ul>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                        <li>Item 6</li>
+                    </ul>
+                </div>
+                <div id="tab3">
+                    <h3>Tab 3...</h3>
+                    <ul>
+                        <li>Item 7</li>
+                        <li>Item 8</li>
+                        <li>Item 9</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

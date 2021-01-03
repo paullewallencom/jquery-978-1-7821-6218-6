@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>Giving tabs an icon</title>
+    	<link href="../../theme/jquery-ui.min.css" rel="stylesheet">
+        <link href="../../jquery-ui-cb.css" rel="stylesheet">
+    	<script src="../../jquery.min.js" type="text/javascript"></script>
+    	<script src="../../jquery-ui.min.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <style type="text/css">
+            .ui-tabs-icon {
+                float: left;
+                margin: -0.2em 0.4em 0 -0.4em;
+            }
+            #tabs {
+                width: 20%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="tabs">
+            <ul>
+                <li data-icon="ui-icon-home">
+                    <a href="#home">Home</a>
+                </li>
+                <li data-icon="ui-icon-search">
+                    <a href="#search">Search</a>
+                </li>
+                <li data-icon="ui-icon-wrench">
+                    <a href="#settings">Settings</a>
+                </li>
+            </ul>
+            <div id="home">
+                <p>Home panel...</p>
+            </div>
+            <div id="search">
+                <p>Search panel...</p>
+            </div>
+            <div id="settings">
+                <p>Settings panel...</p>
+            </div>
+        </div>
+    </body>
+</html>

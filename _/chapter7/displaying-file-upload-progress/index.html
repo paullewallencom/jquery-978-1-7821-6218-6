@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>Displaying file upload progress</title>
+    	<link href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+    	<script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
+    	<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <style type="text/css">
+            body {
+            	font-size: 62.5%;
+	            font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+            }
+            #upload-container {
+                margin-top: 5px;
+                width: 30%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="http://127.0.0.1:8000/" method="POST">
+            <input type="file" name="fileupload"/>
+            <br/>
+            <input type="submit" value="Upload"/>
+            <div id="upload-container" class="ui-helper-hidden">
+                <strong id="upload-value">Uploading...</strong>
+                <div id="upload-progress"></div>
+            </div>
+        </form>
+    </body>
+
+</html>

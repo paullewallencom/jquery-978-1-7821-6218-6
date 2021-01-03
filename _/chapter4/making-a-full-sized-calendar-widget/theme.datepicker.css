@@ -1,0 +1,19 @@
+.ui-datepicker {
+    width: 500px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    font-size: 1.3em;
+}
+
+.ui-datepicker table {
+    font-size: 1em;
+}
+
+.ui-datepicker td {
+    padding: 2px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    padding: 1.1em 1em;
+}

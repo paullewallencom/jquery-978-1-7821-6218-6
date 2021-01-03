@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+    	<meta charset="utf-8">
+    	<title>Using custom markup in tooltips</title>
+    	<link href="../../theme/jquery-ui.min.css" rel="stylesheet">
+        <link href="../../jquery-ui-cb.css" rel="stylesheet">
+    	<script src="../../jquery.min.js" type="text/javascript"></script>
+    	<script src="../../jquery-ui.min.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <style type="text/css">
+            .button-container { 
+                margin: 10px 20px;
+                width: 100px;
+            }
+            .button-container button {
+                width: 100%;
+            }
+            .ui-tooltip-title {
+                font-weight: bold;
+                font-size: 1.1em;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="button-container">
+            <button title="Logs the user in by establishing a new session.">Login</button>
+        </div>
+        <div class="button-container">
+            <button title="Deactivates the session, and logs the user out.">Logout</button>
+        </div>
+    </body>
+
+</html>

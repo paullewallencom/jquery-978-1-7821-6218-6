@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<title>Building a custom widget from scratch</title>
+    	<link href="../../theme/jquery-ui.min.css" rel="stylesheet">
+        <link href="../../jquery-ui-cb.css" rel="stylesheet">
+    	<script src="../../jquery.min.js" type="text/javascript"></script>
+    	<script src="../../jquery-ui.min.js" type="text/javascript"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <style type="text/css">
+            .container {
+                width: 20%;
+                margin: 20px;
+            }
+            .ui-checklist {
+                list-style-type: none;
+                padding: 0.2em;
+            }
+            .ui-checklist li {
+                padding: 0.4em;
+                border: 1px solid transparent;
+                cursor: pointer;    
+            }
+            .ui-checklist li a {
+                text-decoration: none;
+                outline: none;
+            }
+            .ui-checklist-checked {
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <button id="add">Add</button>
+            <button id="remove">Remove</button>
+        </div>
+        <div class="container">
+            <ul id="checklist">
+                <li><a href="#">Write some code</a></li>
+                <li><a href="#">Deploy some code</a></li>
+                <li><a href="#">Fix some code</a></li>
+                <li><a href="#">Write some new code</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div id="progressbar"></div>
+        </div>
+    </body>
+</html>

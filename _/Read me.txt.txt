@@ -1,0 +1,5 @@
+ISBN: 2186OS
+
+Title: jQuery Cookbook
+
+Code files present for chapters 1 - 12.
